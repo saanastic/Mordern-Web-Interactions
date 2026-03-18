@@ -1,12 +1,19 @@
+@font-face {
+  font-family: "Veneer";
+  src: url("Veneer.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 body {
   background: #efe3cf;
   overflow: auto;
+  font-family: "Veneer", sans-serif;
 }
 .nav-bar{
     position:fixed;
@@ -29,15 +36,13 @@ body {
     width: 35%; 
 }
 .logo{
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 2.5rem;
     color: #a0522d;
 }
 .nav a{
     text-decoration: none;
     color: #a0522d;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 .side-icons{
     position:fixed;
@@ -75,8 +80,8 @@ body {
 .bottle{ position: absolute;
     top: 59%;
     left: 55%;
-    transform: translate(-50%, -50%);
-    width: 450px;
+    transform: translate(-50%, -50%) rotate(15deg);
+    width: 420px;
     z-index: 2;
 }
 .bg-text{
@@ -84,10 +89,10 @@ body {
     top: 65%;
     left: 55%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
-    font-weight: 900;
+    font-size: 10rem;
     color: #a0522d;
-    line-height: 100px;
+    font-weight: 200;
+    line-height: 150px;
     text-align: center;
     z-index: 0; }
 .stamp{
@@ -112,12 +117,12 @@ body {
 }
 .left{
     padding-top: 3vh;
-    width:45%;
+    width:35%;
 }
 .left h2{
     font-size: 3.5rem;
-    font-weight: 900;
     color: #a0522d;
+    font-weight: 300;
     line-height: 3.2rem;
 }
 .left p{
@@ -129,7 +134,6 @@ body {
     margin-top: 30px;
     padding: 10px 20px;
     font-size: 1rem;
-    font-weight: bold;
     color: #f7f6f5;
     background-color: #a0522d;
     border: 2px solid #a0522d;
@@ -140,23 +144,143 @@ body {
     transform: scale(1.03);
 }
 .right{
-    width: 45%;
+    width: 35%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap:25px;
+    text-align: left;
 }
 .right h3{
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: 3rem;
+    font-weight: 500;
     color: #a0522d;
 }
 .drinks{
     display: flex;
-    justify-content: space-evenly;
+    gap:1.5rem;
+    text-align: left;
+    justify-content: baseline;
 }
 .drinks h2{
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 200;
     color: #90663B;
+    width:19%;
+}
+.description{
+    font-weight: 100;
+    color: black;
+}
+.description h1{
+    color: #a0522d;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.description p{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.third{
+    position: relative;
+    background: #efe3cf;
+    height: 100vh;
+     min-height: 100vh;
+     margin-top: 1%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+        justify-content: space-between;
+    
+}
+.third h1{
+    font-size: 5.5rem;
+    color: #a0522d;
+    font-weight: 300;
+    line-height: 3.2rem;
+}
+.t1{
+    content: "";
+    height:25%;
+    margin-bottom: 25%;}
+.t1 h4{
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #a0522d;
+}
+.t1-sq{
+    width: 20%;
+  aspect-ratio: 1 / 1;
+border: #a0522d solid 3px;
+display: flex;
+  align-items: center;  
+  justify-content: center;}
+.t1-sq img{
+    width: 94%;
+    height: 94%;
+    object-fit: cover;
+}
+.t1-material{
+    display: flex;
+    gap: 20px;
+}
+.material h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #a0522d;
+}
+.material p{
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 10px;
+    max-width: 400px;
+}
+.fourth{
+    position: relative;
+    background: #efe3cf;
+    height: 100vh;
+     min-height: 100vh;
+     margin-top: 1%;
+    padding-left: 10%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+        justify-content: space-between;
+    
+}
+.t2{
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
+    content: "";
+    height:25%;
+    margin-bottom: 25%;}
+.t2 h4{
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #a0522d;
+    width: 100%;
+    text-align: right;
+}
+.t2-sq{
+    width: 20%;
+  aspect-ratio: 1 / 1;
+border: #a0522d solid 3px;
+display: flex;
+  align-items: center;  
+  justify-content: center;}
+.t2-sq img{
+    width: 94%;
+    height: 94%;
+    object-fit: cover;
+}
+.t2-material{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.fourthdiv{
+    display: flex;
+    flex-direction: row-reverse;
+    align-self:flex-end;
 }

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #111;
+    font-family: Impact, sans-serif;
+    overflow-x: hidden;
+}
+.page1{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.page1 h1{
+    font-weight: 200;
+    text-wrap: nowrap;
+    font-size: 30rem;
+    color: #2a9d8f;}

@@ -13,6 +13,7 @@
 body {
   background: #efe3cf;
   overflow: auto;
+  overflow-x: hidden;
   font-family: "Veneer", sans-serif;
 }
 .nav-bar{
@@ -279,8 +280,36 @@ display: flex;
     flex-direction: row-reverse;
     gap: 20px;
 }
-.fourthdiv{
-    display: flex;
-    flex-direction: row-reverse;
-    align-self:flex-end;
+footer {
+    width: 100%;
+    padding: 140px 0;
+    margin-left: 3%;
+    background-color: #a0522d;
+    display:flex;
+    justify-content: space-evenly;
+}
+.flogo{
+    font-size: 2.5rem;
+    color: #f7f6f5;
+}
+.fnav{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%; 
+}
+.fnav a{
+    text-decoration: none;
+    color: #f7f6f5;
+    font-size:1rem;
+    cursor: pointer;
+    text-align: left;
+}
+.ficon-box a{
+    text-decoration: none;
+    color: #f7f6f5;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
 }

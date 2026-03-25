@@ -17,7 +17,7 @@ body{
 .page1 h1{
     font-weight: 200;
     text-wrap: nowrap;
-    font-size: 30rem;
+    font-size: clamp(3rem, 18vw, 30rem);
     color: #2a9d8f;}
 .page2{
     height: 170vh;
@@ -35,19 +35,31 @@ body{
     height: 20px;
     background-color: #275c56;
     border-radius: 50%;}
+@media (hover: hover) and (pointer: fine) {
+    .cursor {
+        display: block;
+    }
+}
+@media (hover: none) {
+    body {
+        cursor: auto;
+    }
+}
 .page2 h1{
-    font-size: 10rem;
+    font-size: clamp(2.5rem, 10vw, 10rem);
     color: #bef9f2;
-    padding-top: 25rem;
+     padding-top: clamp(4rem, 12vw, 25rem);
     font-weight: 100;
+    text-align: center;
     font-family: Impact, sans-serif;
 }
 .page2 p{
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: #278075;
-    width: 50%;
+    width: min(90%, 50%);
     text-align: center;
     padding-top: 2rem;
+     line-height: 1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 span {
@@ -55,4 +67,50 @@ span {
 }
 .space {
   width: 0.5em; 
+}
+
+/* ── SMALL PHONES (≤ 480px) ── */
+@media (max-width: 480px) {
+    .page1 {
+        height: 60vh;
+    }
+ 
+    .page2 {
+        height: auto;
+        min-height: 100vh;
+        padding: 3rem 1.5rem 5rem;
+    }
+ 
+    .page2 h1 {
+        padding-top: 3rem;
+    }
+}
+ 
+/* ── TABLETS (481px – 768px) ── */
+@media (min-width: 481px) and (max-width: 768px) {
+    .page1 {
+        height: 80vh;
+    }
+ 
+    .page2 {
+        height: auto;
+        min-height: 100vh;
+        padding: 3rem 2rem 6rem;
+    }
+}
+ 
+/* ── LARGE SCREENS (≥ 1600px) ── */
+@media (min-width: 1600px) {
+    .page2 p {
+        width: 40%;
+    }
+}
+ 
+/* ── MISC ── */
+span {
+    display: inline-block;
+}
+ 
+.space {
+    width: 0.5em;
 }

@@ -7,15 +7,18 @@ gsap.to(".heading h1",{
     scrollTrigger:{
         trigger:".heading",
     start: "top 0%",
-    end: "bottom -10%",
+    end: "bottom -40%",
     scrub:2,
-    pin:true,
-markers:true,}
+    pin:true,}
 
 })
 var cursor = document.querySelector(".cursor");
 window.addEventListener("mousemove", function(dets){
-    console.log(dets);
-    cursor.style.left = dets.x + "px";
-    cursor.style.top = dets.y + "px";
+    gsap.to(cursor,{
+        x: dets.clientX,
+        y: dets.clientY,
+        ease:"power2.out",
+        duration:0.3,
+        scale:1.5,
+    })
 })

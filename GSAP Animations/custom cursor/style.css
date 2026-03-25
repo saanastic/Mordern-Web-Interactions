@@ -8,6 +8,7 @@ body{
     background-color: #111;
     font-family: Impact, sans-serif;
     overflow-x: hidden;
+    cursor: none;
 }
 .page1{
     height: 150vh;
@@ -25,11 +26,11 @@ body{
     align-items: center;
 }
 .cursor{
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 20px;
     height: 20px;
-    background-color: #2a9d8f;
+    background-color: #275c56;
     border-radius: 50%;
 }

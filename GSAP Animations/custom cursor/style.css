@@ -11,13 +11,14 @@ body{
     cursor: none;
 }
 .page1{
-    height: 150vh;
+    height: 70vh;
     width:100%;
 }
 .page1 h1{
     font-weight: 200;
-    text-wrap: nowrap;
-    font-size: clamp(3rem, 18vw, 30rem);
+   white-space: nowrap;
+    font-size: clamp(6rem, 18vw, 25rem);
+    padding-left: 50px;
     color: #2a9d8f;}
 .page2{
     height: 170vh;
@@ -34,7 +35,8 @@ body{
     width: 20px;
     height: 20px;
     background-color: #275c56;
-    border-radius: 50%;}
+    border-radius: 50%;
+ mix-blend-mode: difference;}
 @media (hover: hover) and (pointer: fine) {
     .cursor {
         display: block;

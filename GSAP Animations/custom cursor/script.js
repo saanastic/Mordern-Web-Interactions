@@ -48,6 +48,7 @@ gsap.from(".a",{
      scrollTrigger: {
     trigger: ".page2 h1",
     start: "top 80%",
+    scrub: 1,
   }
 })
 gsap.from(".b",{
@@ -56,5 +57,9 @@ gsap.from(".b",{
     ease:"bounce",
     duration:2,
     stagger:-0.1,
-    scrollTrigger:".b",
+    scrollTrigger: {
+    trigger: ".page2 h1",
+    start: "top 80%",
+    scrub: 1,
+  }
 })

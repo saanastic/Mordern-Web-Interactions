@@ -10,6 +10,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
   background: #efe3cf;
   overflow: auto;
@@ -78,10 +81,10 @@ body {
     overflow: hidden;
     align-items: center;
 }
-.bottle{ position: absolute;
+.bottle{ position: fixed;
     top: 59%;
     left: 55%;
-    transform: translate(-50%, -50%) rotate(15deg);
+    transform: translate(-50%, -50%) rotate(25deg);
     width: 420px;
     z-index: 2;
 }

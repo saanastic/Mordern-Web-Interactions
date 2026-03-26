@@ -65,6 +65,8 @@ gsap.to(".bottle", {
         start: "top 95%",
         end: "top 40%",
         scrub: true,
-        markers: true,
     }
 })
+
+
+//failed to apply respnsive javascript code for mobile devices. I will try to do it later.

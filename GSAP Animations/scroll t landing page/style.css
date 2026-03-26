@@ -316,3 +316,111 @@ footer {
     cursor: pointer;
     text-align: left;
 }
+
+@media (max-width: 1024px) {
+    .bottle {
+        width: 320px;
+        left: 55%;
+        top: 55%;
+    }
+    .bg-text {
+        font-size: 7rem;
+        line-height: 110px;
+    }
+    .nav {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+    .nav {
+        width: 60%;
+    }
+    .nav a {
+        font-size: 1.1rem;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+    .side-icons {
+        display: none;
+    }
+    .bottle {
+        width: 220px;
+        left: 50%;
+        top: 50%;
+    }
+    .bg-text {
+        font-size: 4.5rem;
+        line-height: 80px;
+        left: 50%;
+    }
+    .stamp {
+        width: 80px;
+    }
+    .second {
+        flex-direction: column;
+        gap: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .third, .fourth {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .third h1 {
+        font-size: 3.5rem;
+    }
+    .t1-sq, .t2-sq {
+        width: 35%;
+    }
+    .material h3 {
+        font-size: 1.8rem;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 60px 20px;
+        margin-left: 0;
+    }
+    .fnav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .fside-icons {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bottle {
+        width: 160px;
+    }
+    .bg-text {
+        font-size: 3rem;
+        line-height: 55px;
+    }
+    .nav a {
+        font-size: 0.9rem;
+    }
+    .third h1 {
+        font-size: 2.5rem;
+    }
+}
